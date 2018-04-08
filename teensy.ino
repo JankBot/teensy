@@ -53,8 +53,8 @@ void controlEvent(int n) {
 
 void loop() {
   if (watchdog_count > WATCHDOG_TIMEOUT) {
-    dir = 0;
-    bot_speed = 0;
+    dir = 90;
+    bot_speed = 90;
   }
 
   servo.write(dir);
